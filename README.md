@@ -1,3 +1,5 @@
-# senior_design_project
+# Senior Design Project I
 
-A new Flutter project.
+Çağatay Erdoğan - Tahir Furkan Sarıdiken
+
+Okuma - yazma öğretmeyi amaçlayan Flutter ile yapılmış uygulama.
