@@ -1,0 +1,34 @@
+name: senior_design_project
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  audioplayers: ^5.2.1
+  cupertino_icons: ^1.0.6
+  finger_painter: ^1.1.0
+  flip_card: ^0.7.0
+  flutter:
+    sdk: flutter
+  flutter_randomcolor: ^1.0.14
+  just_audio: ^0.9.36
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/audio/
+    - assets/images/
+
+  fonts:
+    - family: LetterForLearners
+      fonts:
+        - asset: fonts/letters_for_learners.ttf
