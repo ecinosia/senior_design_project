@@ -3,12 +3,14 @@
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:senior_design_project/pages/sentence_complete/sentence_complete.dart';
 
 import '../pages/alphabet/alphabet_page.dart';
 import '../pages/image_word_match/image_word_match.dart';
 import '../pages/letter_practice/letter_practice.dart';
 import '../pages/punctuation/punctuation.dart';
 import '../pages/randomWords/random_words.dart';
+import '../pages/read_write_test/read_write_test.dart';
 import '../pages/reading_comprehension/reading_comprehension.dart';
 import '../pages/spelling_rules/spelling_rules.dart';
 import '../pages/word_meaning/word_meaning.dart';
@@ -1411,6 +1413,8 @@ List<String> homePageMenuButtons = [
   "Yazım Kuralları",
   "Anlamdan Kelime Bilme",
   "Okuduğunu Anlama",
+  "Okuma Yazma Testi",
+  "Cümle Tamamlama",
 ];
 
 List<VoidCallback> onTapFunctions(BuildContext context) => [
@@ -1432,15 +1436,8 @@ List<VoidCallback> onTapFunctions(BuildContext context) => [
           context,
           MaterialPageRoute(
               builder: (context) => const ReadingComprehensionPage())),
+      () => Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const ReadWriteTest())),
+      () => Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const SentenceComplete())),
     ];
-
-List<Color?> homePageButtonColors = [
-  const Color.fromARGB(255, 246, 154, 146),
-  const Color.fromARGB(255, 102, 205, 170),
-  const Color.fromARGB(255, 243, 93, 64),
-  const Color.fromARGB(255, 255, 195, 160),
-  const Color.fromARGB(255, 255, 0, 0),
-  const Color.fromARGB(255, 186, 218, 85),
-  const Color.fromARGB(255, 42, 202, 234),
-  const Color.fromARGB(255, 255, 165, 0),
-];

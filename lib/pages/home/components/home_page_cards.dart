@@ -16,6 +16,20 @@ class HomePageCard extends StatefulWidget {
   State<HomePageCard> createState() => _HomePageCardState();
 }
 
+List<Color?> homePageButtonColors = [
+  const Color.fromARGB(255, 246, 154, 146),
+  const Color.fromARGB(255, 102, 205, 170),
+  const Color.fromARGB(255, 243, 93, 64),
+  const Color.fromARGB(255, 255, 195, 160),
+  const Color.fromARGB(255, 255, 0, 0),
+  const Color.fromARGB(255, 186, 218, 85),
+  const Color.fromARGB(255, 42, 202, 234),
+  const Color.fromARGB(255, 255, 165, 0),
+  const Color.fromARGB(255, 42, 202, 234),
+  const Color.fromARGB(255, 255, 165, 0),
+  const Color.fromARGB(255, 255, 195, 160),
+];
+
 class _HomePageCardState extends State<HomePageCard> {
   @override
   Widget build(BuildContext context) {
@@ -27,7 +41,7 @@ class _HomePageCardState extends State<HomePageCard> {
           height: 200,
           child: Card(
             elevation: globals.elev15,
-            color: globals.homePageButtonColors[widget.index],
+            color: homePageButtonColors[widget.index],
             shape: globals.roundedRectangleBorder_circular_8,
             child: Align(
               alignment: globals.alignCenter,

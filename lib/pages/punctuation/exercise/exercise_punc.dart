@@ -21,7 +21,7 @@ class _ExercisePuncPageState extends State<ExercisePuncPage> {
           ? punchExerciseWidget()
           : Stack(
               children: [
-                Container(
+                SizedBox(
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height,
                   child: Image.asset(

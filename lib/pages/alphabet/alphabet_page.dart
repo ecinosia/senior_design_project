@@ -20,7 +20,7 @@ class _AlphabetPageState extends State<AlphabetPage> {
         child: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: const AssetImage(
+              image: AssetImage(
                 "assets/images/resim1.jpg",
               ),
               fit: BoxFit.cover,

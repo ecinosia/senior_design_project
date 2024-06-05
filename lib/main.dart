@@ -1,8 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:senior_design_project/pages/welcome/welcome_page.dart';
 
-void main() {
+import 'firebase_options.dart';
+
+void main() async {
   runApp(const MainApp());
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 }
 
 class MainApp extends StatelessWidget {

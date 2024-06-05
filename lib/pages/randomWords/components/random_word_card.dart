@@ -13,15 +13,13 @@ class RandomWordCard extends StatefulWidget {
 class _RandomWordCardState extends State<RandomWordCard> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text(
-        widget.word,
-        style: TextStyle(
-          color: globals.primary,
-          fontSize: 65,
-          fontWeight: FontWeight.w600,
-          letterSpacing: 8,
-        ),
+    return Text(
+      widget.word,
+      style: TextStyle(
+        color: globals.primary,
+        fontSize: 65,
+        fontWeight: FontWeight.w600,
+        letterSpacing: 8,
       ),
     );
   }
